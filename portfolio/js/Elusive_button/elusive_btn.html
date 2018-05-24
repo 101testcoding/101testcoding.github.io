@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Elusive Button</title>
+	<style>
+		button {
+			font-size: 30px;
+			color: black;
+			background-color: lightblue;
+			padding: 20px;
+			border-color: darkblue;
+			border-width: 3px
+		}
+
+		.mouseovered (){
+		position: absolute;
+		top: 50px;
+		left: 20px;
+		color: blue;
+		
+	/*	// buttonElement.classList.add('mouseovered')
+		console.log('mouseover!', mouseovered)*/
+
+		}
+	</style>
+</head>
+<body>
+	<h1>This is the elusive button<span id="clickCount"></span></h1>
+
+	<button id="my-button">Try and catch me</button>
+
+<script>
+	const button = document.getElementById('my-button')
+	const countSpan = document.getElementById('clickCount')
+	let clickCount = 0
+
+		button.onmouseover = function () {
+			if (clickCount < 10) {
+			button.style.marginLeft = Math.floor((Math.random() * 230) + 1) + "px";
+			button.style.marginTop = Math.floor((Math.random() * 230) + 1) + "px";
+		console.log(button.style);
+			clickCount = clickCount + 1;
+			countSpan.innerHTML = clickCount;
+			// buttonElement.style.backgroundColor = randomColor();
+		console.log('clicked', clickCount);
+		console.log('mouseover!');
+			}
+
+	// 	else (){
+	// 		button.style.marginLeft = 40px;
+	// 		button.style.marginTop = 40px;
+	// 	};
+	// // 	// 	button.onclick = function () {
+ //  //       location.href = "www.youtube.com";
+	// 	// 	}
+	// 	}
+	}
+		
+</script>
+
+</body>
+</html>

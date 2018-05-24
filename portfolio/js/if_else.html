@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<br>
+
+<script>
+	function assignGrade(score){
+		if(score > 90){
+			document.write("A")
+		}
+		else if(score > 80){
+			document.write("B")
+		}
+		else if(score > 70)
+			document.write("C")
+	}
+
+	assignGrade(70)
+</script>
+
+<br>
+
+<script>
+function helloWorld(code){
+	if(code == "en"){
+		document.write("Hello")
+	}
+	else if(code == "fr"){
+		document.write("Bonjour")
+	}
+	else {
+		document.write("@#$#$??????")
+	}
+
+}
+
+helloWorld("")
+	document.write("<br/>")
+helloWorld("en")
+	document.write("<br/>")
+helloWorld("fr")
+	
+
+
+</script>
+
+<br><br>
+
+<script>
+//greater number seclector
+	function greaterNum(num1, num2, num3){
+		if(num1 > num2 && num1 > num3){
+			document.write(num1)
+		}
+		else if(num2 > num1 && num2 > num3){
+			document.write(num2)
+		}
+		else if(num3 >num1 && num3 > num2){
+			document.write(num3)
+		}
+	}
+	greaterNum(3, 7, 9)
+</script>
+<br><br>
+<script>
+	const date = new Date();
+	const today = date.getDay();
+	document.write("<br/>");
+	document.write("Today is " + today);
+	document.write("<br/>");
+
+	if(today == 3)
+		document.write("Wednesday Roast Dinner")
+</script>
+
+<br><br>
+<script>
+//elsif
+	function buyDecision(price, looks){
+
+		if (price == true && looks == true){
+			document.write("Buy it now");
+		}
+		else if(price == false && looks == true){
+		document.write("Save money for later")
+		}	
+		else
+		document.write("Forget it")
+	}
+
+	buyDecision(false,true)
+	document.write("<br/>")
+	buyDecision(true,true)
+	document.write("<br/>")
+	buyDecision(false,false)
+
+
+
+</script>
+
+<br><br>
+<br>
+<script>
+
+let good = 0
+let bad = 0
+
+function homeworkStatus(status){
+
+	if(status == 'done'){
+		document.write("Well Done! ");
+		good = good + 1;
+	}
+	else if(status == 'incomplete '){
+	document.write(" Do it now!");
+		bad = bad + 1
+	}
+
+
+	document.write('Total Star: ' + good)
+	document.write('Total detention ' + bad)	
+}
+
+homeworkStatus('done')
+// homeworkStatus('done')
+// homeworkStatus('incomplete')
+// homeworkStatus('done')
+
+
+
+</script>
+<script>
+	function weatherForecast(weatherType){
+
+		if(weatherType == "Sunny"){
+			document.write("Sunscreen")
+		}
+		else {
+			document.write("all good!")
+		}
+
+	}
+
+	weatherForecast('cloudy')
+</script>
+
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>User Events</title>
+	<style>
+	button{ 
+	padding: 20px;
+	background-color: lightblue;
+	font-size: 30px;
+	font-family: Arial
+	border: 3px solid blue;
+	 }
+	 .mouseovered {
+	 	color: white;
+	 }
+	</style>
+</head>
+<body>
+<p>This button has been clicked <span id="click-count">0
+	
+</span>times</p>
+
+<button id='my-button'>Click Me</button>
+
+
+<script>
+	function randomColor(){
+		const r = Math.floor(Math.random() * 255);
+		const g = Math.floor(Math.random() * 255);
+		const b = Math.floor(Math.random() * 255);
+		return 'rgb(' + r + ',' + g + ',' + b +')'
+	}
+
+	const buttonElement = document.getElementById('my-button');
+	const countSpan = document.getElementById('click-count')
+	
+	let clickCount = 0;
+
+	buttonElement.onclick = function () {
+		window.alert(' I Just Got Clicked On');
+		clickCount = clickCount + 1;
+		countSpan.innerHTML = clickCount;
+		buttonElement.style.backgroundColor = randomColor();
+		console.log('clicked', clickCount);
+	}
+	buttonElement.onmouseover = function () {
+		buttonElement.classList.add('mouseovered')
+		console.log('mouseover!')
+	}
+
+	buttonElement.onmouseout = function () {
+		buttonElement.classList.remove('mouseovered')
+	}
+
+	
+</script>
+
+
+
+</body>
+</html>

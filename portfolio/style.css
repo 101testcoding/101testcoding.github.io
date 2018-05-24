@@ -1,0 +1,188 @@
+h1 {
+	font-family: Open Sans;
+	font-size: 24px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 10000;
+	line-height: 26.4px;
+	color: grey;
+	padding: 20px;
+
+}
+
+body {
+	font-family: Open Sans;
+	font-size: 16px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 26.4px;
+	color: black;
+	margin: 0;
+}
+
+.topnav {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	background-color: #fcea99;
+	width: 100%;
+	border-color: black;
+	border-width: 20px;
+	box-sizing: border-box;
+	padding-left: 20px;
+	padding-right: 20px;
+
+}
+/*About Info*/
+.about_box {
+	display: flex;
+	flex-direction: column;
+	background-color: #fcea99;
+	width: 100%;
+	border-color: black;
+	border-width: 20px;
+	justify-content: space-between;
+}
+/*Projects videos*/
+.video_box	{
+	display: flex;
+	justify-content: center;
+}
+
+.footer {
+	display: flex;
+	flex-direction: column;
+	
+}
+/*Link behaviour - colors*/
+ /* unvisited link */
+a:link {
+    color: green;
+}
+
+/* visited link */
+a:visited {
+    color: green;
+}
+
+/* mouse over link */
+a:hover {
+    color: red;
+}
+
+/* selected link */
+a:active {
+    color: yellow;
+} 
+
+ /* The sidebar menu */
+.sidenav {
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 160px; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #111; /* Black */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 20px;
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+/* Style page content */
+.main {
+    margin-left: 160px; /* Same as the width of the sidebar */
+    padding: 0px 10px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+} 
+
+.gallery-item img{
+	max-width: 200px;
+}
+
+.gallery-item{
+	display: inline-block;
+	padding: 5px;
+	text-align: center;
+	border: 1px solid grey;
+	border-radius: 8px;
+	margin: 3px;
+	vertical-align: top;
+}
+
+/*gallery background*/
+.gallery-background {
+	background-color: #eeeeea
+}
+.gallery-item .caption {
+	display: none;
+}
+.gallery-item img {
+	vertical-align: center;
+}
+
+.lightbox {
+	position: absolute;
+	background-color: rgba(0, 0, 0, 0.8);
+	top: 0;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	padding-top: 40px;
+}
+
+.lightbox a{
+	color: white;
+}
+
+.lightbox-close {
+	float: center;
+}
+
+.lightbox-previous {
+	float: left;
+}
+
+.lightbox-next{
+	float: right;
+}
+
+.lightbox-contents{
+	display: inline-block;
+
+}
+
+.lightbox img{
+	max-height: 80vh;
+}
+
+.hidden {
+	display: none;
+}
+
+.lightbox-image .caption {
+	color: white;
+}
+
+.projectlogo {
+	max-height: 100px;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE>
+<html>
+
+<head>
+    <title> Tic Tac Toe  JS</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+</head>
+
+<body>
+
+    <h1 class="title">This is <img src="../../Images/tictactoe.png" class="tictactoe-logo">  </h1>
+
+    <div class="game-panel">
+
+        <div class="tic-tac-toe">
+            <table class="scoreboard">
+                <tr>
+                    <td> Player 1 </td>
+                    <td width="30"> &nbsp; </td>
+                    <td> Player 2 </td>
+                </tr>
+                <tr>
+                    <td class="score X">
+                        0
+                    </td>
+                    <td> &nbsp; </td>
+                    <td class="score O">
+                        0
+                    </td>
+                </tr>
+            </table>
+
+            <div class="board"></div>
+
+            <button class="btn-reset"> Reset </button>
+
+            <select class="grid-options">
+              <!--   <option value="2"> 2 X 2 </option> -->
+                <option value="3" selected> 3 X 3 </option>
+               <!--   --><!-- <option value="4"> 4 X 4 </option>
+                <option value="5"> 5 X 5 </option>
+                <option value="6"> 6 X 6 </option> -->
+            </select>
+        </div>
+
+    </div>
+<button><a href="../../projects.html">Back to projects</a></button>
+    <script src="script.js"></script>
+    <script>
+        TicTacToe('.game-panel');
+    </script>
+
+</body>
+
+</html>

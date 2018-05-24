@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<h1>The FizzBuzz Logic Challenge</h1>
+
+<button onclick="doFizzBuzz()"> Start Now </button>
+
+<p id="result"></p>
+
+<script>
+function doFizzBuzz() {
+    	var txt;
+   		const num = prompt("Please enter your number: ", "Number please");
+		//a prompt wioll appear
+
+		if (num % 3 == 0 && num % 5 == 0){
+			txt = "FizzBuzz";
+		}
+		else if(num % 5 == 0){
+			txt = "Fizz";
+		}
+		else if(num % 3 == 0){
+			txt = "Buzz";
+		}
+		else if ("a..z"){
+			txt = "This is not a number"		}
+		    document.getElementById("result").innerHTML = txt;
+    // document.getElementById("demo").innerHTML = txt;
+}
+</script>
+
+</body>
+</html>

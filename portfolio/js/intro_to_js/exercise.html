@@ -1,0 +1,73 @@
+<!Doctype html>
+<head>
+  <title>
+    Functions exercise
+  </title>
+</head>
+  <body>
+    <h1>Functions</h1>
+    
+    <script>
+      function tellFortune(kids, partner, location, job){
+        document.write("You will be a " + job + "in" + location + "married to " + partner + " with " + kids + "kids " );
+      }
+          tellFortune(2, 'Tara ', ' Malaysia ', 'developer ')
+        document.write('<br/>')
+  
+          tellFortune(3, ' John ', ' Japan ', ' Barber ')
+        document.write('<br/>')
+          tellFortune(4, " Susan ", ' England ', ' banker ')
+    </script>
+    
+    <br/>
+    <br/>
+    <br/>
+    <script>
+      function calculateDogAge(age){
+      const result = age * 7
+      return result
+      
+      }
+      
+      
+      document.write(calculateDogAge(6))
+      
+    </script>
+    <br/>
+    <br/>
+    <br/>
+    <script>
+      function calculateSupply(age, maxAge, costPD){
+        
+        const result = (maxAge - age) * costPD;
+        
+        
+        document.write('You will need ' + result + ' to last you until the ripe old age of ' + maxAge )
+      }
+      
+          calculateSupply(33, 80, 5)
+        document.write('<br/>')
+          calculateSupply(34, 81, 6)
+        document.write('<br/>')
+          calculateSupply(35, 82, 7)
+      
+      
+    </script>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <script>
+      function farToCel(Far){
+      
+      const result = (Far-32) * .5556;
+      document.write(result)
+      
+      }
+      
+      farToCel(100)
+      
+    </script>
+    
+    
+  </body>

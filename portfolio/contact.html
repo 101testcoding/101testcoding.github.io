@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<h1 align = center >Contact</h1>
+	
+		<div class="topnav">
+		  <a href="landing.html">Home</a>
+		  <a href="projects.html">Projects</a>
+		  <a href="gallery.html">Gallery</a>
+		  <a href="contact.html">Contact</a>
+		  <a href="about.html">About</a>
+		</div> 
+	
+
+	<section>
+		<header><b>Map</b></header>
+		
+		<div id="googleMap" style="width:100%;height:400px;"></div>
+		
+		<script>
+		function myMap() {
+		var mapProp= {
+		    center:new google.maps.LatLng(51.508742,-0.120850),
+		    zoom:5,
+		};
+		var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+		}
+		</script>
+		
+		<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
+		
+		<a href="https://www.facebook.com/Thomas.C.Magee">
+			<img src="Images/facebook_logo.png", height = 100px>
+		</a>
+		<a href="https://www.instagram.com/the_world_food_dude/">
+			<img src="Images/instabw.png", height = 100px>
+		</a>
+				<table>
+		<th><b>Details</b></th>
+	
+		<tr>
+			<td><b>Name</b></td>
+			<td>Thomas Magee</td>		
+		</tr>
+		<tr>
+			<td><b>Location</b></td>
+			<td>Mutiara Damansara <br> Petaling Jaya <br> Malaysia
+			</td>
+		</tr>
+		<tr>
+			<td><b>Telephone</b></td>
+			<td>01823*****</td>
+		</tr>
+		<tr>
+			<td><b>Email:</b></td>	
+			<td>101testcoding@gmail.com</td>
+		</tr>
+		</table>
+	</section>
+	
+	<footer>
+		<div class="footer">
+			<p>All Copright Reserved Thomas Magee May 2018</p>
+			<p>This is the footer displayed in flex row</p>
+			<a id="scrollup">Scroll</a>
+		</div>
+	</footer>
+	
+
+</body>
+</html>
+
+<!-- 	<div class="topnav">
+	 <div><a href="landing.html">Home</a></div>
+	  <div><a href="projects.html">Projects</a></div>
+	  <div>
+	    <a href="contact.html">Contact</a>
+	  </div>
+	  <div>
+	  	<a href="about.html">About</a>
+	  </div>
+	</div>  -->

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script>
+//variables + parameters
+	firstName = "Thomas";
+	secondName= "Magee";
+	fullname = firstName + secondName
+	fullnameLow = fullname.toLowerCase();
+	document.write(fullname);
+	document.write('<br/>');
+	document.write(fullname.length);
+	document.write('<br/>');
+	document.write(fullname[3]);
+	document.write('<br/>');
+	document.write(fullnameLow);
+	document.write('<br/>');
+
+	//functions
+
+function sayGoodbye(name, greeting){
+
+	document.write("Hi, my name is " + name + greeting)
+	document.write(" Bye")
+}
+
+sayGoodbye('Tommy ', "Whatsup! ")
+document.write('<br/>')
+sayGoodbye('Sheila ', 'Shamone! ')
+
+	document.write('<br/>');
+
+
+function squared(number){
+	const result = number * number
+	return result;
+}
+document.write(squared(2) + squared(4))
+
+document.write('<br/>')
+4
+function totalPets(numCats, numDogs){
+    const total = numCats + numDogs;  //'total' is created in local scope
+  document.write(total);
+}
+
+totalPets(2, 3);
+document.write(total); // what happens here?
+
+</script>
+
+</body>
+</html>

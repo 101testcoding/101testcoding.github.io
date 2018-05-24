@@ -1,0 +1,14 @@
+body {
+	font-size: 30px;
+	text-align: center;
+	background-color: #eeeeee
+}
+
+.word-style{
+	font-style: bold;
+	color: lightblue;
+}
+
+.hangmanLogo{
+	max-width: 200px;
+}

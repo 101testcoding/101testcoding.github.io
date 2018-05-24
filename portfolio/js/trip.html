@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<script>
+	var reading = [
+	{ title: "Guvnor",
+	  author: "Pass",
+	  alreadyRead: true,
+	},
+
+	{ title: "Dark Tower",
+	  author: "Stephen King",
+	  alreadyRead: true,
+	},
+
+	{ title: "1984",
+	  author: "Orwell",
+	  alreadyRead: false,
+	}]
+	
+	i = 0
+	for (let i = 0; i < reading.length; i++){
+
+		if (reading[i].alreadyRead == true) {
+		console.log("you already read: " + reading[i].title + " by " + reading[i].author)
+	}
+
+	else {
+		console.log("time to read: " + reading[i].title + " by " + reading[i].author)
+	}
+
+	}
+	
+
+</script>
+
+
+<!-- Trip object exercisse -->
+<!-- <script> 
+	var trip = {
+		location: 'Kuala Lumpur',
+		companions: ["Tom", "Steph", "Carl"],
+		duration: 7,
+		cost: 1200,
+		landmarks: ["Towers", "Park", "Batu"]
+	};
+	
+
+	function showTrip(theTrip) {
+		document.write("My dream trip: " + trip.location + " with " + trip.companions + " for " + trip.duration + " days!");
+	}
+	showTrip()
+
+</script>
+ -->
+
+
+</body>
+</html>

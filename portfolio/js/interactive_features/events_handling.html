@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Interactive Features</title>
+</head>
+<body>
+
+<!-- <a id="url" href="https://www.google.com">Example Website</a> -->
+
+<div id="social-box">
+	<a id="facebook" href="https://wwww.facebook.com">facebook</a>
+	<a id="linkedin" href="https://wwww.linkedin.com">linkedIn</a>
+</div>
+
+<script>
+
+	const child = document.getElementById('social-box');
+
+	child.onmouseover = function (event){
+	const hov = event.target;
+	console.log(hov);
+
+	console.log(hov.children)
+	console.log(hov.parent)
+	}
+
+	//prevent default action when clicking link
+	// let link = document.getElementById('url');
+	// 	link.onclick = function(event){
+	// 	event.preventDefault();
+		// }
+// 	document.getElementById("myAnchor").addEventListener("click", function(event){
+//     event.preventDefault()
+// });
+
+</script>
+</body>
+</html>
